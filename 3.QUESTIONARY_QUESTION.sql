@@ -30,6 +30,6 @@ BEGIN
 			raise_application_error(-20555, 'Can`t change id');
 		END IF;
     END IF; 
-end;
+END;
 /
 

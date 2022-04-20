@@ -12,18 +12,18 @@ CREATE SEQUENCE SEQ_QUESTIONARY_TEMPLATE
  NOCYCLE;
 
 CREATE TRIGGER TRG_QUESTIONARY_TEMPLATE_I_U
-	before update or insert
+	BEFORE UPDATE OR INSERT
 		ON QUESTIONARY_TEMPLATE
-	for each row
-begin
-    IF(inserting) THEN
-		:NEW.id := SEQ_QUESTIONARY_TEMPLATE.nextval;
+	FOR EACH ROW
+BEGIN
+    IF(INSERTING) THEN
+		:NEW.ID := SEQ_QUESTIONARY_TEMPLATE.NEXTVAL;
     END IF;
    
-    IF(updating) THEN
-		IF :NEW.id <> :OLD.id THEN 
+    IF(UPDATING) THEN
+		IF :NEW.ID <> :OLD.ID THEN 
 			raise_application_error(-20555, 'Can`t change id');
 		END IF;
     END IF; 
-end;
+END;
 /
