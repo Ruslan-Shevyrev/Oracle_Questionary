@@ -86,7 +86,7 @@ BEGIN
 		WHERE ID = P_nID;
 END pUPDATE_Q_QUESTION;
 
--- Delete Questionary Answer Type
+-- Delete Questionary Question
 PROCEDURE pDELETE_Q_QUESTION(P_nID IN NUMBER)
 IS
 BEGIN
