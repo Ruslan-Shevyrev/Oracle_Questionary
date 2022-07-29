@@ -22,7 +22,7 @@ BEGIN
     END IF;
    
     IF(UPDATING) THEN
-		IF :NEW.ID <> :OLD.ID THEN 
+		IF :NEW.ID <> :OLD.ID THEN
 			raise_application_error(-20555, 'Can`t change id');
 		END IF;
     END IF; 
