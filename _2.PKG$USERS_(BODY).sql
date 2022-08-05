@@ -25,7 +25,7 @@ BEGIN
 		IF :NEW.ID <> :OLD.ID THEN
 			raise_application_error(-20555, 'Can`t change id');
 		END IF;
-    END IF;
+    END IF; 
 END;
 /
 
