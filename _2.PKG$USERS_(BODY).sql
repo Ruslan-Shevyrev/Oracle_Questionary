@@ -28,7 +28,7 @@ BEGIN
     END IF;
 END;
 /
-
+ 
 CREATE VIEW V_USERS
 	(ID,
 	LAST_NAME,
