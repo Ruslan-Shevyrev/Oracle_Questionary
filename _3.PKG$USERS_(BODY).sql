@@ -30,7 +30,7 @@ BEGIN
 		WHERE ID = P_nID;
 END pUPDATE_USER;
 
--- Update User
+-- Delete User
 PROCEDURE pDELETE_USER(P_nID IN NUMBER)
 AS
 BEGIN
