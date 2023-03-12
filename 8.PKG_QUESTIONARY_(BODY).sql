@@ -110,7 +110,7 @@ BEGIN
 				P_dDATE_END);
 END pCREATE_Q_QUESTIONARY;
 
--- Update Questionary Question
+-- Update Questionary
 PROCEDURE pUPDATE_Q_QUESTIONARY(P_nID 			IN NUMBER,
 								P_nTEMPLATE_ID 	IN NUMBER,
 								P_dDATE_BEG 	IN DATE,
@@ -124,7 +124,7 @@ BEGIN
 		WHERE ID = P_nID;
 END pUPDATE_Q_QUESTIONARY;
 
--- Delete Questionary Question
+-- Delete Questionary
 PROCEDURE pDELETE_Q_QUESTIONARY(P_nID IN NUMBER)
 IS
 BEGIN
