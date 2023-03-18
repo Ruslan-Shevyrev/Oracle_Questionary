@@ -24,14 +24,14 @@ BEGIN
 		IF :NEW.ID <> :OLD.ID THEN
 			raise_application_error(-20555, 'Can`t change id');
 		END IF;
-	END IF; 
+	END IF;
 END;
 /
 
 CREATE VIEW V_QUESTIONARY_ANSWER_TYPE
-	(ID, 
+	(ID,
 	NAME)
 AS 
-SELECT ID, 
-       NAME 
+SELECT	ID,
+		NAME
 	FROM QUESTIONARY_ANSWER_TYPE;
