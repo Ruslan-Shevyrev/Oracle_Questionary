@@ -1,2 +1,2 @@
 ## Questionary Oracle DataDase objects
-Oracle DataBase objects for Questionary 
+Oracle DataBase objects for Questionary
